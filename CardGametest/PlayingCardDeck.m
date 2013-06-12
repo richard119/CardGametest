@@ -20,6 +20,8 @@
                 PlayingCard *card = [[PlayingCard alloc] init];
                 card.rank = rank;
                 card.suit = suit;
+                [card setUnplayable:FALSE];
+                [card setFaceUp:FALSE];
                 [self addCard:card atTop:YES];
             }
         }
